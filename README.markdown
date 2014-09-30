@@ -1132,7 +1132,23 @@ Here they all are..
 Observe that the API returns 18 instances for GCE, where the RightScale and GCE dashboards only reflect 2.
 
 RightScale Dashboard
+====================
 ![RightScale Dashboard](rsdash.png)
 
 Google Console
+==============
 ![Google Console](google-console.png)
+
+Jenkins CI+Google
+=================
+Notice that "Jenkins CI+Google" is returned by the API, but does not appear in the "terminated" servers view.
+
+![Jenkins CI+Google](jenkins_not_there.png)
+
+42 Not Equal To 16
+==================
+Notice that there are 42 "terminated" servers in the UI.  The API returns 18 total records, filtering out 2 for the "operational" or "active" instances leaves 16.
+
+The point remains that the API is returning different results than the UI.
+
+![42 not equal to 16](42_not_equal_to_16.png)
